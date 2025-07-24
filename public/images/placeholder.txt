@@ -1,0 +1,6 @@
+This directory will contain images for the game studio landing page:
+- Header background banner
+- Logo
+- Game screenshots
+- Platform icons (Windows, Mac)
+- Social media icons (Twitter/X, Discord)
