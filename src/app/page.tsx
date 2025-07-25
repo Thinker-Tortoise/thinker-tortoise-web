@@ -34,8 +34,8 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">WELCOME!</h2>
             <div className="text-lg text-gray-700 space-y-4">
-              <p>Thinker Tortoise is a Singapore-based game studio crafting bite-sized experiences with heart. We explore bold ideas through small, polished games — one thoughtful step at a time.</p>
-              <p>This page hosts our latest prototypes and feedback links — a space for you to test, share thoughts, and shape what we build next.</p>
+              <p>Thinker Tortoise is a Singapore-based game studio crafting bite-sized experiences with heart. We explore bold ideas through small, polished games &mdash; one thoughtful step at a time.</p>
+              <p>This page hosts our latest prototypes and feedback links &mdash; a space for you to test, share thoughts, and shape what we build next.</p>
             </div>
           </div>
         </section>

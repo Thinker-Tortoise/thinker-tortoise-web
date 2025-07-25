@@ -41,7 +41,7 @@ const FeedbackForm: React.FC = () => {
       
       {submitted ? (
         <div className="bg-green-100 text-green-700 p-4 rounded mb-4">
-          Thank you for your feedback! We'll get back to you soon.
+          Thank you for your feedback! We&apos;ll get back to you soon.
         </div>
       ) : null}
       
