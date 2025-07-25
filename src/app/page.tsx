@@ -86,7 +86,7 @@ export default function Home() {
           
           {/* Discord Button */}
           <Link 
-            href="https://x.com/TTortoiseGames" 
+            href="https://discord.gg/dHyugnpQ" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center justify-between bg-gray-200 hover:bg-gray-300 transition px-6 py-4 rounded-full w-full md:w-[32%]"
