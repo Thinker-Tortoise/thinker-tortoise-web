@@ -48,15 +48,15 @@ export default function Home() {
             <Game 
               title="Mine & Stack"
               imageUrl="/images/games_banner_balance.png"
-              windowsDownloadUrl="https://google.com"
-              macDownloadUrl="https://google.com"
+              windowsDownloadUrl="https://drive.google.com/file/d/15USl-R1zIl3XpLSdBoAL1YekkaWjqM5Z/view?usp=sharing"
+              macDownloadUrl="https://drive.google.com/file/d/1_PFX3mqU53DySqxMi2HNtQ1IjKmVE7bh/view?usp=sharing"
               feedbackUrl="https://forms.gle/QTBZTG2NzHzyiZb46"
             />
             <Game 
               title="Spells VS Monsters"
               imageUrl="/images/games_banner_pvz.png"
-              windowsDownloadUrl="https://google.com"
-              macDownloadUrl="https://google.com"
+              windowsDownloadUrl="https://drive.google.com/file/d/126NKJVEFhMv7tjF0Am258ziIw1VIZoXy/view?usp=sharing"
+              macDownloadUrl="https://drive.google.com/file/d/1ngqbiUZrOfQCnlLSwywYOPnwnormcRPG/view?usp=sharing"
               feedbackUrl="https://forms.gle/fhuN43D3ro9todDD6"
             />
           </div>

@@ -58,6 +58,8 @@ const Game: React.FC<GameProps> = ({
           <div className="flex space-x-3">
             <Link 
               href={windowsDownloadUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center px-3 py-1 bg-gray-100 text-black rounded hover:bg-gray-200 transition"
             >
               <span className="mr-1">Windows</span>
@@ -72,6 +74,8 @@ const Game: React.FC<GameProps> = ({
             </Link>
             <Link 
               href={macDownloadUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center px-3 py-1 bg-gray-100 text-black rounded hover:bg-gray-200 transition"
             >
               <span className="mr-1">Mac</span>
