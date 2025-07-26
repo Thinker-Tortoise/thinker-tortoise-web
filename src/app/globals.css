@@ -12,12 +12,8 @@
   --font-heading: var(--font-lato-bold);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Dark mode disabled */
+/* Keeping consistent light theme regardless of user's device preferences */
 
 body {
   background: var(--background);
