@@ -66,9 +66,9 @@ export default function Home() {
                         <Game
                             title="Spells VS Monsters"
                             imageUrl="/images/games_banner_pvz.png"
-                            windowsDownloadUrl="https://drive.google.com/file/d/126NKJVEFhMv7tjF0Am258ziIw1VIZoXy/view?usp=sharing"
-                            macDownloadUrl="https://drive.google.com/file/d/1ngqbiUZrOfQCnlLSwywYOPnwnormcRPG/view?usp=sharing"
-                            feedbackUrl="https://forms.gle/fhuN43D3ro9todDD6"
+                            windowsDownloadUrl="https://drive.google.com/file/d/16gQjShwZt4fhQKRvTseMRQvTOE-03vW6/view?usp=sharing"
+                            macDownloadUrl="https://drive.google.com/file/d/1M91GrPWY1_il3rw_kSgBkYKQBE-KJpr_/view?usp=sharing"
+                            feedbackUrl="https://forms.gle/KSeLm4MMChuMG68BA"
                         />
                     </div>
                 </section>
