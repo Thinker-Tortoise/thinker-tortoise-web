@@ -56,19 +56,13 @@ export default function Home() {
                     </h2>
                     <div className="grid grid-cols-1 gap-8 max-w-5xl mx-auto">
                         {/* Game prototypes */}
-                        {/*<Game 
-              title="Mine & Stack"
-              imageUrl="/images/games_banner_balance.png"
-              windowsDownloadUrl="https://drive.google.com/file/d/15USl-R1zIl3XpLSdBoAL1YekkaWjqM5Z/view?usp=sharing"
-              macDownloadUrl="https://drive.google.com/file/d/1_PFX3mqU53DySqxMi2HNtQ1IjKmVE7bh/view?usp=sharing"
-              feedbackUrl="https://forms.gle/QTBZTG2NzHzyiZb46"
-            />*/}
+                        {/* feedbackUrl should not be changed. It's a github redirect link*/}
                         <Game
                             title="Spells VS Monsters"
                             imageUrl="/images/games_banner_pvz.png"
-                            windowsDownloadUrl="https://drive.google.com/file/d/16gQjShwZt4fhQKRvTseMRQvTOE-03vW6/view?usp=sharing"
-                            macDownloadUrl="https://drive.google.com/file/d/1M91GrPWY1_il3rw_kSgBkYKQBE-KJpr_/view?usp=sharing"
-                            feedbackUrl="https://forms.gle/KSeLm4MMChuMG68BA"
+                            windowsDownloadUrl="https://drive.google.com/file/d/1rFJnDH2-oOoZN9Hc6jelpffL7qQQ-1sJ/view?usp=sharing"
+                            macDownloadUrl="https://drive.google.com/file/d/131xepW2XYw-RpJGS1dnI5yRlQROrkyUR/view?usp=sharing"
+                            feedbackUrl="https://thinker-tortoise.github.io/form-redirect/"
                         />
                     </div>
                 </section>
