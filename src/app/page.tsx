@@ -4,6 +4,9 @@ import Header from "@/components/Header";
 import Game from "@/components/Game";
 import Footer from "@/components/Footer";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const getBackgroundPath = (path: string) => `${basePath}${path}`;
+
 /**
  * Home Component
  *
@@ -16,7 +19,7 @@ import Footer from "@/components/Footer";
  */
 export default function Home() {
     // Actual images provided by user
-    const headerBackground = "/images/header_bg.png"; // Header background image
+    const headerBackground = getBackgroundPath("/images/header_bg.png"); // Header background image
     const logoImage = "/images/header_logo_tt.png"; // Thinker Tortoise logo
 
     return (
