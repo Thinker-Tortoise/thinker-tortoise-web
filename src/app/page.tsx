@@ -3,9 +3,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Game from "@/components/Game";
 import Footer from "@/components/Footer";
-
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-const getBackgroundPath = (path: string) => `${basePath}${path}`;
+import { getImagePath } from "@/utils/imageUtils";
 
 /**
  * Home Component
@@ -19,8 +17,8 @@ const getBackgroundPath = (path: string) => `${basePath}${path}`;
  */
 export default function Home() {
     // Actual images provided by user
-    const headerBackground = getBackgroundPath("/images/header_bg.png"); // Header background image
-    const logoImage = "/images/header_logo_tt.png"; // Thinker Tortoise logo
+    const headerBackground = getImagePath("/images/header_bg.png"); // Header background image
+    const logoImage = getImagePath("/images/header_logo_tt.png"); // Thinker Tortoise logo
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -62,7 +60,7 @@ export default function Home() {
                         {/* feedbackUrl should not be changed. It's a github redirect link*/}
                         <Game
                             title="Spells VS Monsters"
-                            imageUrl="/images/games_banner_pvz.png"
+                            imageUrl={getImagePath("/images/games_banner_pvz.png")}
                             windowsDownloadUrl="https://drive.google.com/file/d/1rFJnDH2-oOoZN9Hc6jelpffL7qQQ-1sJ/view?usp=sharing"
                             macDownloadUrl="https://drive.google.com/file/d/131xepW2XYw-RpJGS1dnI5yRlQROrkyUR/view?usp=sharing"
                             feedbackUrl="https://thinker-tortoise.github.io/form-redirect/"
@@ -86,7 +84,7 @@ export default function Home() {
                         </span>
                         <div className="relative w-10 h-10 flex-shrink-0">
                             <Image
-                                src="/images/social_icon_x.png"
+                                src={getImagePath("/images/social_icon_x.png")}
                                 alt="Twitter/X"
                                 width={40}
                                 height={40}
@@ -106,7 +104,7 @@ export default function Home() {
                         </span>
                         <div className="relative w-10 h-10 flex-shrink-0">
                             <Image
-                                src="/images/social_icon_discord.png"
+                                src={getImagePath("/images/social_icon_discord.png")}
                                 alt="Discord"
                                 width={40}
                                 height={40}

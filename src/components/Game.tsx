@@ -1,3 +1,4 @@
+import { getImagePath } from '@/utils/imageUtils';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -65,7 +66,7 @@ const Game: React.FC<GameProps> = ({
               <span className="mr-1">Windows</span>
               <div className="relative w-4 h-4">
                 <Image 
-                  src="/images/games_build_icon_windows.png" 
+                  src={getImagePath("/images/games_build_icon_windows.png")} 
                   alt="Windows icon" 
                   width={16} 
                   height={16} 
@@ -81,7 +82,7 @@ const Game: React.FC<GameProps> = ({
               <span className="mr-1">Mac</span>
               <div className="relative w-4 h-4">
                 <Image 
-                  src="/images/games_build_icon_mac.png" 
+                  src={getImagePath("/images/games_build_icon_mac.png")} 
                   alt="Mac icon" 
                   width={16} 
                   height={16} 
