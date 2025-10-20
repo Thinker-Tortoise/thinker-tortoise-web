@@ -1,4 +1,4 @@
-name: Deploy static site
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -30,13 +30,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build static site
-        run: npm run build
+      - name: Build
+        run: |
+          npm run build
+          touch out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: out
+          path: ./out
 
   deploy:
     environment:
