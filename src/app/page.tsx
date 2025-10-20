@@ -3,7 +3,6 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Game from "@/components/Game";
 import Footer from "@/components/Footer";
-import { getImagePath } from "@/utils/imageUtils";
 
 /**
  * Home Component
@@ -17,8 +16,8 @@ import { getImagePath } from "@/utils/imageUtils";
  */
 export default function Home() {
     // Actual images provided by user
-    const headerBackground = getImagePath("/images/header_bg.png"); // Header background image
-    const logoImage = getImagePath("/images/header_logo_tt.png"); // Thinker Tortoise logo
+    const headerBackground = `${process.env.NEXT_PUBLIC_URL}/images/header_bg.png`; // Header background image
+    const logoImage = `${process.env.NEXT_PUBLIC_URL}/images/header_logo_tt.png`; // Thinker Tortoise logo
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -30,21 +29,16 @@ export default function Home() {
                 {/* Description Section */}
                 <section className="my-8">
                     <div className="text-center max-w-3xl mx-auto">
-                        <h2 className="text-2xl font-bold mb-4 text-gray-800">
-                            WELCOME!
-                        </h2>
+                        <h2 className="text-2xl font-bold mb-4 text-gray-800">WELCOME!</h2>
                         <div className="text-lg text-gray-700 space-y-4">
                             <p>
-                                Thinker Tortoise is a Singapore-based game
-                                studio crafting bite-sized experiences with
-                                heart. We explore bold ideas through small,
-                                polished games &mdash; one thoughtful step at a
-                                time.
+                                Thinker Tortoise is a Singapore-based game studio crafting
+                                bite-sized experiences with heart. We explore bold ideas through
+                                small, polished games &mdash; one thoughtful step at a time.
                             </p>
                             <p>
-                                This page hosts our latest prototypes and
-                                feedback links &mdash; a space for you to test,
-                                share thoughts, and shape what we build next.
+                                This page hosts our latest prototypes and feedback links &mdash; a
+                                space for you to test, share thoughts, and shape what we build next.
                             </p>
                         </div>
                     </div>
@@ -60,7 +54,7 @@ export default function Home() {
                         {/* feedbackUrl should not be changed. It's a github redirect link*/}
                         <Game
                             title="Spells VS Monsters"
-                            imageUrl={getImagePath("/images/games_banner_pvz.png")}
+                            imageUrl={`${process.env.NEXT_PUBLIC_URL}/images/games_banner_pvz.png`}
                             windowsDownloadUrl="https://drive.google.com/file/d/1rFJnDH2-oOoZN9Hc6jelpffL7qQQ-1sJ/view?usp=sharing"
                             macDownloadUrl="https://drive.google.com/file/d/131xepW2XYw-RpJGS1dnI5yRlQROrkyUR/view?usp=sharing"
                             feedbackUrl="https://thinker-tortoise.github.io/form-redirect/"
@@ -84,7 +78,7 @@ export default function Home() {
                         </span>
                         <div className="relative w-10 h-10 flex-shrink-0">
                             <Image
-                                src={getImagePath("/images/social_icon_x.png")}
+                                src={`${process.env.NEXT_PUBLIC_URL}/images/social_icon_x.png`}
                                 alt="Twitter/X"
                                 width={40}
                                 height={40}
@@ -104,7 +98,7 @@ export default function Home() {
                         </span>
                         <div className="relative w-10 h-10 flex-shrink-0">
                             <Image
-                                src={getImagePath("/images/social_icon_discord.png")}
+                                src={`${process.env.NEXT_PUBLIC_URL}/images/social_icon_discord.png`}
                                 alt="Discord"
                                 width={40}
                                 height={40}
