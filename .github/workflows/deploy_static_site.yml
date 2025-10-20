@@ -33,6 +33,7 @@ jobs:
       - name: Build
         env:
           GITHUB_PAGES: 'true'
+          NEXT_PUBLIC_IS_CUSTOM_DOMAIN: 'true'  # This will be used to detect custom domain in next.config.ts
         run: |
           npm run build
           touch out/.nojekyll

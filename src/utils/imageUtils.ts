@@ -1,13 +1,14 @@
 export const getImagePath = (path: string) => {
-    // Remove leading slash if present to avoid double slashes
-    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    // Ensure path starts with a single slash
+    const cleanPath = path.startsWith('/') ? path : `/${path}`;
     
     // In production, use relative paths for custom domain, full path for GitHub Pages
     if (process.env.NODE_ENV === 'production') {
         const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-        return `${basePath}/${cleanPath}`.replace(/\/+$/, '');
+        // Remove any double slashes that might occur from joining paths
+        return `${basePath}${cleanPath}`.replace(/([^:]\/)\/+/g, '$1');
     }
     
     // In development, use the path as is
-    return `/${cleanPath}`;
+    return cleanPath;
 };
