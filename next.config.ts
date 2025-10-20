@@ -11,12 +11,16 @@ const nextConfig: NextConfig = {
   },
   // For GitHub Pages, we need to set the base path
   // For custom domain, we don't need a base path
-  assetPrefix: isGithubPages ? `/${repoName}/` : undefined,
+  assetPrefix: isGithubPages ? `/${repoName}/` : '/',
   basePath: isGithubPages ? `/${repoName}` : "",
   trailingSlash: true,
   // Set environment variable for client-side usage
   env: {
     NEXT_PUBLIC_BASE_PATH: isGithubPages ? `/${repoName}` : "",
+  },
+  // Add public path for static assets
+  publicRuntimeConfig: {
+    basePath: isGithubPages ? `/${repoName}` : "",
   },
 };
 
