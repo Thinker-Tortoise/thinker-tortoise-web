@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Game from "@/components/Game";
 import Footer from "@/components/Footer";
+import Changelog from "@/components/Changelog";
 
 /**
  * Home Component
@@ -55,11 +56,16 @@ export default function Home() {
                         <Game
                             title="Spells VS Monsters"
                             imageUrl={`${process.env.NEXT_PUBLIC_URL}/images/games_banner_pvz.png`}
-                            windowsDownloadUrl="https://drive.google.com/file/d/1rFJnDH2-oOoZN9Hc6jelpffL7qQQ-1sJ/view?usp=sharing"
-                            macDownloadUrl="https://drive.google.com/file/d/131xepW2XYw-RpJGS1dnI5yRlQROrkyUR/view?usp=sharing"
+                            windowsDownloadUrl="https://drive.google.com/file/d/11wnvVfWiMVIC08H4vG1eOHlpf12_jTWa/view?usp=sharing"
+                            macDownloadUrl="https://drive.google.com/file/d/1ZEpNAn7URO37mzaysTLDuG6Lg7fHTlaP/view?usp=sharing"
                             feedbackUrl="https://thinker-tortoise.github.io/form-redirect/"
                         />
                     </div>
+                </section>
+
+                {/* Changelog Section */}
+                <section className="my-12 max-w-5xl mx-auto mt-10" id="changelog">
+                    <Changelog />
                 </section>
             </main>
 
